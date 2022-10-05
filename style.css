@@ -3,7 +3,7 @@
     padding:0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    
 
 }
 body{
@@ -351,12 +351,12 @@ nav .fas{
         background-image: url(images/pho-back.jpg);
     }
 .header-text{
-    margin-top: 50%;
+    margin-top: 80%;
     font-size: 16px;
 }
 .header-text h1{
     font-size: 20px;
-    margin-top: 180px;
+    margin-top: 250px;
 }
 .header-text p{
     font-size: 12px;
