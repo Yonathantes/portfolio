@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c552bd5412.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul> 
+                    
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>       
+        <div class="header-text">
+            <p>All rounded IT professional</p>
+            <H1>Hi, I'm <span> Yonathan</span> from Linz, Austria. 
+            </H1>
+            <p>
+                Welcome to my personal portfolio website <br>
+            I used <span> html</span> , <span>css</span>  and <span>Java script</span>  to build this website.
+            </p>
+        </div>
+        
+    </div>
+    
+</div>
+
+<!----------------about---------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/usr.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About me</h1>
+                <p> My name is Yonathan Balcha, I was born and raised in Addis Ababa Ethiopia. I came to linz in September
+                    2021 to study Artificial Intelligence. Currently I'm in my third semister studying AI. I'm an open minded person with an outgoing personality.
+                  </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span> Backend development</span><br>SQL. Debugging. intermediate level knowladge on Data science 
+                            and automation using python programming</li>
+                        <li><span> Frontend web development</span><br> html,css and Java script and I can adapt to any 
+                             programming language fast since I have the basic programming knowledge</li>
+                        <li><span> Overall IT knowledge</span><br> Excellent user of microsoft apps like xcel,access and word.
+                            Hardware & software installation. Desktop support. Network structure and security. customer relationship management (CRM) systems. </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span> 2019-2021 </span><br>Kidus Gems P.L.C  <br> IT technical support: <br> <br> <span> keep</span> computer systems running smoothly and ensure users get the maximum benefit 
+                            from them. <br> <span> install</span> and configure computer hardware operating systems and applications. <br>
+                            <span> troubleshoot</span> system and network problems, diagnosing and solving hardware
+                             or software faults. <br> <span> replace</span> parts as required
+                        </li>
+                        <li><span> 2015-2019</span><br> Tsehay Insurance S.C. <br> Senior officer: Handling insurance claims 
+                            and underwriting policies  <br>
+                        <br> <span> I used </span> PREMIA which is an insurance management solution
+                        system which does Product Management, Underwriting & Risk Management, Policy Acquisition & Servicing, 
+                        clains management, finance and accounts, and report management.
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span> 2021 - present </span><br>Johannes Kepler University. Linz, Austria: <br>
+                        BA Artificial Intelligence </li>
+                        <li><span> 2012 - 2015 </span><br>Addis Ababa University School OF Commerce. 
+                        Addis Ababa, Ethiopia: <br>
+                        BA Business Administration and information systems</li>
+                        <li><span> Elementary and Highschool Education</span><br> Saint Joseph School. Addis Ababa, Ethiopa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------services   -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Develomnet</h2>
+                <p>I created this part just to show my web programming skills. The link will lead you to nowhere </p>
+                <a href="#">LEARN MORE</a>    
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Backend Development</h2>
+                <p>I created this part just to show my web programming skills. The link will lead you to nowhere</p>
+                <a href="#">LEARN MORE</a>    
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>IT Specialist</h2>
+                <p>I created this part just to show my web programming skills. The link will lead you to nowhere</p>
+                <a href="#">LEARN MORE</a>    
+            </div>
+        </div>
+    </div>
+
+</div>
+<!----------------portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">Language Skills </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Amharic</h3>
+                    <p>My mother tongue <br>
+                        እንዴት ኣደርክ</p>
+                    <a href="#" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>English</h3>
+                    <p>Excellent user <br> Good morning</p>
+                    <a href="#" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>German</h3>
+                    <p>Beginner <br> Guten Morgen </p>
+                    <a href="#" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+
+
+    </div>
+</div>
+
+<!--------------------contact--------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> yoniyona033@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i> +67764273351</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">download cv</a>
+
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                    <button type="submiit" class="btn btn2">submit</button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="copywright">
+        <p>copywright @ Yonathan Tesfaye 2022 <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+</div>
+
+
+
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+
+sidemenu.style.right = "-200px";
+}
+
+</script>
+
+</body>
+</html>
