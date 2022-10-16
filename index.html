@@ -236,7 +236,7 @@ sidemenu.style.right = "-200px";
       .then(response => {msg.innerHTML = "Message sent successfully" 
                         setTimeout(function(){
                             msg.innerHTML = ""},5000)
-                        form.reset
+                        form.reset()
                         })
       
       .catch(error => console.error('Error!', error.message))
